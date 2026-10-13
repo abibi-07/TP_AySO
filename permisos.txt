@@ -1,0 +1,22 @@
+total 80
+drwxr-x--- 12 vagrant vagrant 4096 Oct 12 07:51 .
+drwxr-xr-x  4 root    root    4096 Sep  9 14:17 ..
+-rw-------  1 vagrant vagrant 3442 Oct 13 22:21 .bash_history
+-rw-r--r--  1 vagrant vagrant  220 Aug 29 11:08 .bash_logout
+-rw-r--r--  1 vagrant vagrant 4251 Sep  9 14:18 .bashrc
+drwx------  2 vagrant vagrant 4096 Sep  9 14:17 .cache
+-rw-rw-r--  1 vagrant vagrant   56 Oct 11 21:57 .gitconfig
+-rw-------  1 vagrant vagrant   20 Oct 12 07:51 .lesshst
+-rw-r--r--  1 vagrant vagrant  807 Aug 29 11:08 .profile
+drwx------  2 vagrant vagrant 4096 Oct 11 21:52 .ssh
+-rw-r--r--  1 root    root       5 Sep  9 14:18 README
+-rw-rw-r--  1 vagrant vagrant   44 Sep 16 13:45 archivo.txt
+drwxrwxr-x  2 vagrant vagrant 4096 Sep 16 13:43 archivos_clase
+drwxrwxrwx  1 vagrant vagrant    0 Sep  9 14:15 carpeta_compartida
+drwxrwxr-x  5 vagrant vagrant 4096 Sep 23 11:53 ejercicio1
+drwxrwxr-x  4 vagrant vagrant 4096 Sep 23 11:55 ejercicio2
+drwxrwxr-x  3 vagrant vagrant 4096 Sep 23 11:58 ejercicio3
+drwxrwxr-x  3 vagrant vagrant 4096 Oct 11 21:54 repo-prueba-
+drwxrwxr-x  4 vagrant vagrant 4096 Oct 11 22:24 repogit
+drwx------  3 vagrant vagrant 4096 Sep 23 11:43 snap
+ls -la ~
