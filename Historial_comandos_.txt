@@ -1,0 +1,262 @@
+pwd
+cd /
+pwd
+ls
+man ls
+ls -a
+ls -l
+ls -a -l
+ls -al
+man cd
+cd home/
+cd vagrant/
+cd ..
+ls
+cd ubuntu/
+cd vagrant/
+ls
+ls -l
+cd repogit/+
+cd repogit-
+cd repogit/
+ls
+cd UTN-FRA_SO_onBording/
+ls
+cat
+ls
+car README
+cat
+ls
+cat README
+man cat
+cat << FIN
+hola
+linea1
+linea 2
+linea 3
+FIN
+
+cat << FIN > archivo.txt
+hola
+mi nombre es
+abigail
+FIN
+
+ls
+car archivo.txt 
+cat archivo.txt 
+car << FIN > archivo.txt
+escribo
+algo
+nuevo
+FIN
+
+car << FIN > archivo.txt 
+escribo
+algo
+nuevo
+FIN
+
+cat << FIN > archivo.txt 
+escribo
+algo
+nuevo
+FIN
+
+cat archivo.txt 
+cat << FIN >> archivo.txt
+sdd
+dsd
+ds
+FIN
+
+cat archivo.txt 
+man bc
+bc <<< 22+2
+bc <<< 100 * 100
+bc <<< 100*100
+tac archivo.txt 
+man echo
+echo "Hola mundo"
+echo "Hola mundo" | wc
+man tail
+cat archivo.txt 
+tail -n2 archivo.txt 
+cat archivo.txt | tail -2
+cat archivo.txt | head -n2
+cat archivo.txt  | wc
+cat archivo.txt | head -n1 | wc
+man grep
+cat archivo.txt | grep nuevo
+cat << FIN >> archivo.txt 
+Morena
+morena
+FIN
+
+cat archivo.txt 
+cat archivo.txt | grep Morena
+cat archivo.txt | grep morena
+cat archivo.txt | grep -i sofia
+cat archivo.txt | grep -1 morena
+cat archivo.txt | head -n2 | grep | -i morena
+cat /proc/cpuinfo | grep proce
+cat /proc/cpuinfo | grep cpu
+cat /proc/cpuinfo | grep "cpu family" 
+cat /proc/cpuinfo | grep "cpu family" | tail -n1
+grep "cpu family" /proc/cpuinfo
+grep "cpu family" /proc/cpuinfo | tail -n1
+grep "cpu family" /proc/cpuinfo | head -n1
+ls
+man mkdir
+mkdir archivos_clase
+ls
+mv archivo.txt archivos_clase/
+ls
+cd archivos_clase/
+ls
+cp archivo.txt ..
+ls
+cd ..
+ls
+man rm
+sudo snap install tree
+tree .
+man mkdir
+mkdir -p ejercicio 1/(mama,papa)/hijo{1..4}
+mkdir -p ejercicio1/{mama.papa}/hijo´{1..4}
+ls
+tree ejercicio1
+tree ejercicio1/
+mkdir -p ejercicio1/´{{mama,papa}/hijo{1..4},papa/{perro,gato}}
+ls 
+tree ejercicio1/
+mkdir -p ejercicio2/´{{mama,papa}/hijo{1..4},papa/{perro,gato}}
+ls
+tree ejercicio2
+mkdir -p ejercicio3/{mama /papa}/hijo{1..4},papa/{perro,gato,hijo{1..4}}}
+cat /etc/passwd
+ssh-keygen
+cd
+pwd
+lsla
+ls -la
+cd .shh
+cd .ssh/
+ls -la
+cat id_rsa.pub
+cd
+pwd
+cd .ssh/
+ls -la
+sudo apt install git
+git --version
+git clone[[200~git@github.com:abibi-07/repo-prueba-.git~]
+home
+cd
+git clone git@github.com:abibi-07/repo-prueba-.git
+cp README repo-prueba-/
+cd repo-prueba-/
+ls -la
+git status
+git add README 
+git status
+git commit -m "Primer archivo"
+git config --global user.name Abigail
+git config --global user.email abicalustro07@gmail.com
+git commit -m "Primer archivo"
+git push origin main
+pwd
+cd
+pwd
+mkdir repogit
+cd repogit
+git clone git@github.com:abibi-07/TP_AySO.git
+cd TP_AySO/
+pwd
+grep -i vagrant/etc/shadow
+pwd
+ssh-keygen
+cat ~/.ssh/id_rsa.pub
+ssh -T git@github.com
+cd/home/vagrant
+cd /home/vagrant/
+pwd
+mkdir repogit
+cd repogit
+ls -la
+cd TP_AySO/
+pwd
+ls -la
+git status
+cat README.md
+man grep
+cat /etc/shadow
+sudo cat /etc/shadow
+grep VAGRANT /etc/shadow
+grep vagrant /etc/shadow
+sudo grep VAGRANT /etc/shadow
+sudo grep vagrant /etc/shadow
+sudo grep -i Vagrant /etc/shadow
+sudo grep vagrant /etc/shadow | awk -F: '{print $2}' > pass_usuario.txt
+cat pass_usuario.txt
+whoami
+echo "Usuario=$(whoami)" >> pass_usuario.txt
+cat pass_usuario.txt
+git push origin main
+git pull origin main --rebase
+git push origin main 
+git status
+git add pass_usuario.txt
+git commit -m "ADD: agrego el archivo pass_usuario.txt"
+git push origin main 
+git commit --amend -m "ADD: agregado 1er ejercicio sobre pass_usuario.txt"
+git push origin main --force
+cd ~
+cd ~/repogit/TP_AySO/
+ls -la ~ > permisos.txt
+echo "ls -la ~" >> permisos.txt
+cat permisos.txt 
+git add permisos.txt
+git commit -m "ADD: Añadiendo archivos permisos"
+git push origin main
+grep -v "root" /etc/passwd | head -n 10 > lista_ordenada
+cat lista_ordenada 
+git add lista_ordenada
+git commit -m "ADD: Listado de usuarios ordenada"
+git push origin main
+cat << EOF >> README.md
+Alumno: Morena Calustro
+División: 111
+Turno: Mañana
+EOF
+
+cat README.md 
+cat << EOF > README.md 
+
+Alumno: Morena Calustro
+División: 111
+Turno: MAñana
+EOF
+
+car README.md 
+cat README.md 
+git add README.md 
+git commit -m "docs: agregar información del alumno al README"
+git push origin main 
+mkdir -p ~/universidad/{alumnos/legajos{1..15},profesores/legajos{1..5}}
+tree universidad
+rm -rf ~/universidad
+mkdir -p ~/universidad/{alumnos/legajos{1..15},profesores/legajos{1..5}}
+tree ~/universidad/
+cd ~
+tree universidad/
+cd ~/repogit/TP_AySO
+cat << EOF > script_dir.sh
+#!/bin/bash
+mkdir -p ~/universidad/{alumnos/legajos{1..15},profesores/legajos{1..5}}
+EOF
+
+git add .
+git commit -m "ADD: Añadiendo script"
+git push
+history -a
